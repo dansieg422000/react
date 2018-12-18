@@ -2,13 +2,30 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+function HelloWorld(props, e) {
+   return <h1>Hello, {props.name}!</h1>;
+}
+
 class App extends Component {
+  elemClick = () => {
+    console.log(this);
+  }
+
+
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
+            <div>
+                <HelloWorld name="World" onClick={this.elemClick} />
+                <button onClick={this.elemClick}>
+                    Click me
+                </button>
+            </div>
+            {/*<p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a
@@ -18,7 +35,7 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
-          </a>
+          </a>*/}
         </header>
       </div>
     );
