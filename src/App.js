@@ -1,45 +1,32 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import { Route } from 'react-router-dom';
+import { ImplicitCallback } from '@okta/okta-react';
+import {
+  CssBaseline,
+  withStyles,
+} from '@material-ui/core';
 
+import AppHeader from './components/AppHeader';
+import Home from './pages/Home';
 
-function HelloWorld(props, e) {
-   return <h1>Hello, {props.name}!</h1>;
-}
+const styles = theme => ({
+  main: {
+    padding: 3 * theme.spacing.unit,
+    [theme.breakpoints.down('xs')]: {
+      padding: 2 * theme.spacing.unit,
+    },
+  },
+});
 
-class App extends Component {
-  elemClick = () => {
-    console.log(this);
-  }
+const App = ({ classes }) => (
+  <Fragment>
+    <CssBaseline />
+    <AppHeader />
+    <main className={classes.main}>
+        <Route exact path="/" component={Home} />
+        <Route path="/implicit/callback" component={ImplicitCallback} />
+    </main>
+  </Fragment>
+);
 
-
-
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-            <div>
-                <HelloWorld name="World" onClick={this.elemClick} />
-                <button onClick={this.elemClick}>
-                    Click me
-                </button>
-            </div>
-            {/*<p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>*/}
-        </header>
-      </div>
-    );
-  }
-}
-
-export default App;
+export default withStyles(styles)(App);
