@@ -1,13 +1,16 @@
 import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 import { ImplicitCallback } from '@okta/okta-react';
+import SplitterLayout from 'react-splitter-layout';
 import {
   CssBaseline,
   withStyles,
+  Grid
 } from '@material-ui/core';
 
 import AppHeader from './components/AppHeader';
 import Home from './pages/Home';
+import LeftNav from './components/LeftNavigation';
 
 const styles = theme => ({
   main: {
@@ -23,7 +26,16 @@ const App = ({ classes }) => (
     <CssBaseline />
     <AppHeader />
     <main className={classes.main}>
-        <Route exact path="/" component={Home} />
+        <SplitterLayout percentage={true} primaryMinSize={25} secondaryMinSize={75}>
+            <LeftNav />
+            <Grid
+                container
+                direction="row"
+                justify="center"
+                alignItems="center"
+                component={Home}
+            ></Grid>
+        </SplitterLayout>
         <Route path="/implicit/callback" component={ImplicitCallback} />
     </main>
   </Fragment>
