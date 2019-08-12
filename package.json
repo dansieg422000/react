@@ -8,11 +8,13 @@
     "@material-ui/icons": "1.1.0",
     "@okta/okta-react": "1.0.2",
     "npm-watch": "^0.5.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.1",
-    "react-splitter-layout": "^3.0.1"
+    "react-splitter-layout": "^3.0.1",
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1"
   },
   "watch": {
     "test": "{src,test}/*.js"

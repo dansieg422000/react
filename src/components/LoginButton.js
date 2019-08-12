@@ -9,12 +9,20 @@ import {
 import { AccountCircle } from '@material-ui/icons';
 import { withAuth } from '@okta/okta-react';
 
+// function isLoggedIn(props) {
+//     return props.loggedIn;
+// }
+
 class LoginButton extends Component {
   state = {
     authenticated: null,
     user: null,
     menuAnchorEl: null,
   };
+
+  constructor(props) {
+    super(props);
+  }
 
   componentDidUpdate() {
     this.checkAuthentication();
@@ -43,14 +51,23 @@ class LoginButton extends Component {
 
   render() {
     const { authenticated, user, menuAnchorEl } = this.state;
+    // const isIn = <isLoggedIn loggedIn="false" />
 
-    if (authenticated == null) return null;
+      // console.log(authenticated);
+
+    if (authenticated == null)
+      return null;
+    // else
+    //   return isLoggedIn();
+
     if (!authenticated) return <Button color="inherit" onClick={this.login}>Login</Button>;
 
     const menuPosition = {
       vertical: 'top',
       horizontal: 'right',
     };
+
+      // console.log(authenticated);
 
     return (
       <div>

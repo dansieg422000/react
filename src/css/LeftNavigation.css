@@ -4,4 +4,15 @@
     padding: 10px;
 }
 
+.Links {
+    list-style-type: none;
+    color: dodgerblue;
+    cursor: pointer;
+
+}
+
+.subLinks {
+    margin: 5px;
+    padding: 10px;
+}
 

@@ -7,6 +7,10 @@ import {
 } from '@material-ui/core';
 
 import LoginButton from './LoginButton';
+let login = new LoginButton();
+
+// console.log(login);
+
 
 const styles = {
   flex: {
@@ -18,7 +22,6 @@ const AppHeader = ({ classes }) => (
   <AppBar position="static">
     <Toolbar>
       <Typography variant="title" color="inherit">
-        My React App
       </Typography>
         <div className={classes.flex} />
         <LoginButton />
