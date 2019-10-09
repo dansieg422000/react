@@ -1,0 +1,28 @@
+{
+  "allSkiDays": [
+    {
+      "resort": "Kirkwood",
+      "date": "2019-12-7",
+      "powder": true,
+      "backcountry": false
+    },
+    {
+      "resort": "Blue Mountain",
+      "date": "2019-11-7",
+      "powder": true,
+      "backcountry": true
+    },
+    {
+      "resort": "Snowy Mountain",
+      "date": "2019-10-7",
+      "powder": false,
+      "backcountry": false
+    }
+  ],
+  "goal": 10,
+  "errors": [],
+  "resortNames": {
+    "fetching": false,
+    "suggestions": ["Snowy Hills", "Snowy Park", "Snowy Town", "Snowy City"]
+  }
+}
