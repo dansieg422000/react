@@ -20,6 +20,7 @@ class LoginButton extends Component {
     menuAnchorEl: null,
   };
 
+  // eslint-disable-next-line
   constructor(props) {
     super(props);
   }

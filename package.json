@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/runtime": "7.0.0-beta.46",
-    "@material-ui/core": "^1.3.1",
-    "@material-ui/icons": "1.1.0",
+    "@babel/runtime": "^7.0.0-beta.46",
+    "@material-ui/core": "^1.5.1",
+    "@material-ui/icons": "^1.1.0",
     "@okta/okta-react": "1.0.2",
+    "bootstrap": "^4.3.1",
     "npm-watch": "^0.5.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-router": "^5.1.2",
     "react-router-dom": "4.3.1",
     "react-scripts": "2.1.1",
     "react-splitter-layout": "^3.0.1",
     "reactstrap": "^7.1.0",
-    "redux": "^4.0.1"
+    "redux": "^4.0.4"
   },
   "watch": {
     "test": "{src,test}/*.js"
@@ -24,7 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "stop": "taskkill -F -IM node.exe"
+    "stop": "taskkill -F -IM node.exe",
+    "babel-run": "./node_modules/.bin/babel-node ./src/"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,5 +37,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
 }

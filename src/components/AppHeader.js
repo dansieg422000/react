@@ -7,6 +7,8 @@ import {
 } from '@material-ui/core';
 
 import LoginButton from './LoginButton';
+
+// eslint-disable-next-line
 let login = new LoginButton();
 
 // console.log(login);
