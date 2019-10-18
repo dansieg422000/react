@@ -1,5 +1,5 @@
 import C from './constants';
-import { skiDay } from './store/reducers'
+import { skiDay } from './reducers/reducers'
 
 const state = 10
 

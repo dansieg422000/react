@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import '../css/LeftNavigation.css';
 import ListItem from '@material-ui/core/ListItem';
 import { withRouter } from 'react-router-dom';
-import Registration from './Registration';
-import {
-    CssBaseline,
-    withStyles,
-    Grid
-} from '@material-ui/core';
+// import Registration from './Registration';
+// import {
+//     CssBaseline,
+//     withStyles,
+//     Grid
+// } from '@material-ui/core';F
 import Home from "../pages/Home";
 
 function SubLinks()  {
@@ -50,7 +50,6 @@ class LeftNavigation extends Component{
     registerOnClick = () => {
         console.log("Register");
         this.props.history.push('/register');
-        //return (<Registration/>);
     }
 
     render() {

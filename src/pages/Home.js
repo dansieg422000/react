@@ -2,6 +2,8 @@ import {
   Typography,
 } from '@material-ui/core';
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import Registration from "../components/Registration";
 
 function welcomeGreetings(props) {
   return "Welcome Home! ";
@@ -27,5 +29,5 @@ class Home extends Component {
 
 }
 
-export default (Home);
+export default withRouter(Home);
 
