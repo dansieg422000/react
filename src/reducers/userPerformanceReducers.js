@@ -1,15 +1,11 @@
-
 import {Table} from "@material-ui/core";
 import React from "react";
 
 const UserPerformanceList = ({users})  => {
     console.log(users);
 
-    // return '';
-
     return (
         <Table>
-
             <thead>
             <tr>
                 <th>First Name</th>
@@ -25,10 +21,7 @@ const UserPerformanceList = ({users})  => {
                         <td>{user.lastName}</td>
                         <td>{user.email}</td>
                     </tr>
-
             )}
-
-
             </tbody>
         </Table>
     )
