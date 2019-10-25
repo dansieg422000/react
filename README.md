@@ -27,6 +27,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## npm install serve -g
+To install a static server that will run the production build
+
+## serve -s build
+To run the build production using serve local server
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -36,6 +42,9 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Install create-react-app which will install all the dependencies
+npm install -g create-react-app
 
 ## Learn More
 
@@ -52,3 +61,29 @@ npm install babel-preset-stage-0 --save-dev
 
 ## Reactstrap
 Source: https://reactstrap.github.io
+
+## Other sources
+React.js Essential Training
+Learning React VR
+https://reactjs.org
+
+## Courses after watching React.js Essential Training
+- React Recipes
+- React: Lifecycles
+- React: Components, Context and Accessibility
+
+## React Life Cycle
+http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram
+
+## Sample API
+https://hplussport.com/api/products/order/price/sort/asc/qty/1
+
+## ELMO React (Library)
+https://reactjs.org/docs/code-splitting.html
+https://elmolearning.atlassian.net/wiki/spaces/DS/pages/470516452/React+Redux+best+practices+and+conventions#React/Reduxbestpracticesandconventions-18.Appstructure(PRchecklist)
+http://getbem.com/naming/
+https://www.styled-components.com/docs/basics
+https://storybook.js.org/
+https://github.com/styleguidist/react-styleguidist
+
+
