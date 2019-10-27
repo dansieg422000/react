@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca28e747-b3de-4e0e-a66a-50eb603b2efa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -31,39 +25,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Starting the</find>
-      <find>presets</find>
-      <find>watchOptions</find>
-      <find>webpack</find>
-      <find>babel</find>
-      <find>devserver</find>
-      <find>react-scripts start</find>
-      <find>start</find>
-      <find>webpack-dev-server</find>
-      <find>material</find>
-      <find>defineProperty</find>
-      <find>okta</find>
-      <find>registerServiceWorker</find>
-      <find>registerSer</find>
-      <find>ButtonBase</find>
-      <find>client_id</find>
-      <find>REACT_APP_OKTA_ORG_URL</find>
-      <find>extends</find>
-      <find>AccountCircle</find>
-      <find>Grid</find>
-      <find>np</find>
-      <find>App.css</find>
-      <find>Navigation</find>
-      <find>setS</find>
-      <find>props</find>
-      <find>My Rea</find>
-      <find>redux</find>
-      <find>ListItem</find>
-      <find>ListItemText</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -73,7 +34,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Rwsoce6QEQE64VuMTu4l6yLh9z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -86,9 +51,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/state" />
+      <recent name="$PROJECT_DIR$/src/js" />
+      <recent name="$PROJECT_DIR$/src/css" />
       <recent name="C:\Users\ronal\vBox\react-app\src" />
     </key>
   </component>
@@ -146,6 +115,13 @@
       <workItem from="1562724995685" duration="44000" />
       <workItem from="1563501399035" duration="1472000" />
       <workItem from="1570589670335" duration="5776000" />
+      <workItem from="1570765878630" duration="15488000" />
+      <workItem from="1571285104284" duration="1858000" />
+      <workItem from="1571347907236" duration="5107000" />
+      <workItem from="1571692686524" duration="1401000" />
+      <workItem from="1571778363454" duration="3931000" />
+      <workItem from="1571805413140" duration="2885000" />
+      <workItem from="1571981235077" duration="1859000" />
     </task>
     <servers />
   </component>
@@ -167,7 +143,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
