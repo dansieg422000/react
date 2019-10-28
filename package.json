@@ -8,13 +8,19 @@
     "@material-ui/icons": "^1.1.0",
     "@okta/okta-react": "1.0.2",
     "bootstrap": "^4.3.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
     "npm-watch": "^0.5.0",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.2.0",
     "react-splitter-layout": "^3.0.1",
+    "react-test-renderer": "^16.11.0",
+    "react-transition-group": "^1.2.1",
     "reactstrap": "^7.1.0",
     "redux": "^4.0.4"
   },
@@ -22,10 +28,12 @@
     "test": "{src,test}/*.js"
   },
   "scripts": {
-    "start": "cross-env PORT=3005 && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
+    "flow": "flow",
     "stop": "taskkill -F -IM node.exe",
     "babel-run": "./node_modules/.bin/babel-node ./src/"
   },
@@ -39,9 +47,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-flow": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "cross-env": "^6.0.3"
+    "eslint": "^6.6.0",
+    "flow-bin": "^0.110.1",
+    "jest": "^24.9.0"
   }
 }

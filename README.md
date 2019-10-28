@@ -61,6 +61,7 @@ npm install babel-preset-stage-0 --save-dev
 
 ## Reactstrap
 Source: https://reactstrap.github.io
+- npm install --save reactstrap react react-dom
 
 ## Other sources
 React.js Essential Training
@@ -86,4 +87,50 @@ https://www.styled-components.com/docs/basics
 https://storybook.js.org/
 https://github.com/styleguidist/react-styleguidist
 
+## Debugging on React
+
+## Facebook Repo - Tools
+- https://github.com/facebook/react-devtools
+- https://github.com/facebook/react-devtools/tree/v3
+
+## FLOW - Type checking tool
+- https://flow.org
+- https://flow.org/en/docs/install/
+
+## Add to package.json after the eject
+- "flow": "flow"
+
+## How to use
+1. Follow the installation guide on the link above
+2. Add // @flow on the file you want to do a type check
+3. Run npm run flow OR yarn run flow
+
+## Linter - ESLint
+- http://eslint.org
+- https://eslint.org/docs/user-guide/getting-started
+- https://github.com/yannickcr/eslint-plugin-react
+
+## To add some ESLint plugins
+- npm add eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+
+## Adding ESLint Config
+1. Create a .eslintrc.json file in the root directory of your app 
+
+## Jest - Command to run JEST test
+- https://facebook.github.io/jest/docs/en/expect.html#content
+- npm test a or yarn test a
+
+## To test using Snapshot or compare image
+- npm install react-test-renderer OR yarn add react-test-renderer
+
+## To run a specific file using JEST
+- npm test File.test.js 
+
+## Adding a Test Coverage - open the package.json and add the code below after the "test": "react-scripts test"
+"coverage": "react-scripts test --env=jsdom --coverage",
+- yarn coverage OR npm run coverage 
+
+## Chrome DevTools Overview
+- https://developer.chrome.com/devtools
+- http://localhost:3000/?react_perf
 
