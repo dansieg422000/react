@@ -53,5 +53,3 @@ npm install babel-preset-stage-0 --save-dev
 ## Reactstrap
 Source: https://reactstrap.github.io
 
-## Adding Jenkins to the project
-Jenkins URL: http://localhost:8080/
