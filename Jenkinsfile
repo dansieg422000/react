@@ -2,13 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage("Checkout") {
-            steps {
-                git branch:'master', url: 'https://github.com/dansieg422000/react'
-            
-            }
-        }
-        
         stage("Running Parallel task") {
             steps {
                 parallel testA: {
