@@ -5,10 +5,13 @@ pipeline {
         stage('Navigate to Component') {
             steps {
                 dir('src/components') {
-                    // Perform actions within the subdirectory
                     sh 'ls -la'
                 }
             }
+        }
+
+        stage('Check the directory') {
+            sh 'pwd'
         }
         
         // stage("Running Parallel task") {
