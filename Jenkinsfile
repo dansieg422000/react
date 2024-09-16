@@ -17,6 +17,7 @@ pipeline {
                 nodejs('NodeJS') {
                     // sh 'npm test'
                     sh 'npm -v'
+                    sh 'npm audit'
                 }
                 
             }
