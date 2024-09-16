@@ -11,7 +11,9 @@ pipeline {
         }
 
         stage('Check the directory') {
-            sh 'pwd'
+            steps {
+                sh 'pwd'
+            }
         }
         
         // stage("Running Parallel task") {
