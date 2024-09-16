@@ -2,26 +2,35 @@ pipeline {
     agent any
     
     stages {
-        stage("Running Parallel task") {
+        stage('Navigate to Component') {
             steps {
-                parallel testA: {
-                    sh 'echo test A is running'
-                }, testB: {
-                    sh 'echo test B is running'
+                dir('src/components') {
+                    // Perform actions within the subdirectory
+                    sh 'ls -la'
                 }
             }
         }
+        
+        // stage("Running Parallel task") {
+        //     steps {
+        //         parallel testA: {
+        //             sh 'echo test A is running'
+        //         }, testB: {
+        //             sh 'echo test B is running'
+        //         }
+        //     }
+        // }
 
-        stage("Run Unit Test") {
-            steps {
-                nodejs('NodeJS') {
-                    // sh 'npm test'
-                    sh 'npm -v'
-                    sh 'npm audit'
-                }
+        // stage("Run Unit Test") {
+        //     steps {
+        //         nodejs('NodeJS') {
+        //             // sh 'npm test'
+        //             sh 'npm -v'
+        //             sh 'npm audit'
+        //         }
                 
-            }
-        }
+        //     }
+        // }
     }
     
     post {
